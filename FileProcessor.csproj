@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7543D564-B738-426F-86B9-408FAF44FCCD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileProcessor</RootNamespace>
+    <AssemblyName>FileProcessor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\..\..\..\..\..\Development\SourceSafeCode\TRH Application\External Assembly\NHibernate\Fluent NHibernate\3.0\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Development\SourceSafeCode\TRH Application\External Assembly\NHibernate\Fluent NHibernate\3.0\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Development\SourceSafeCode\TRH Application\External Assembly\Ninject\2.0\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer\FileProcessorDataConfig.cs" />
+    <Compile Include="DataLayer\FluentMappings\DataFileConfigurationMapping.cs" />
+    <Compile Include="DataLayer\FluentMappings\DataFileElementMapping.cs" />
+    <Compile Include="DataLayer\FluentMappings\DataSourceFileMapping.cs" />
+    <Compile Include="DataLayer\FluentMappings\DataSourceFileTypeMapping.cs" />
+    <Compile Include="DataLayer\FluentMappings\FileProcessorErrorMapping.cs" />
+    <Compile Include="DataLayer\FluentMappings\Repositories\BaseReadRepository.cs" />
+    <Compile Include="DataLayer\FluentMappings\Repositories\DataFileConfigurationReadRepository.cs" />
+    <Compile Include="DataLayer\FluentMappings\Repositories\DataSourceFileReadRepository.cs" />
+    <Compile Include="DataLayer\FluentMappings\Repositories\DataSourceFileTypeReadRepository.cs" />
+    <Compile Include="DomainLayer\Commands\CreateDataFileConfigurationCommand.cs" />
+    <Compile Include="DomainLayer\Commands\CreateDataSourceFileCommand.cs" />
+    <Compile Include="DomainLayer\Entities\BaseEntity.cs" />
+    <Compile Include="DomainLayer\Entities\DataFileConfiguration.cs" />
+    <Compile Include="DomainLayer\Entities\DataFileElement.cs" />
+    <Compile Include="DomainLayer\Entities\DataSourceFile.cs" />
+    <Compile Include="DomainLayer\Entities\DataSourceFileType.cs" />
+    <Compile Include="DomainLayer\Entities\FileProcessorError.cs" />
+    <Compile Include="DomainLayer\FileParsers\CharacterDelimitedFileRowParser.cs" />
+    <Compile Include="DomainLayer\FileParsers\FixedWidthRowParser.cs" />
+    <Compile Include="DomainLayer\FileParsers\IFileRowParser.cs" />
+    <Compile Include="DomainLayer\InterfaceRepositories\IDataFileConfigurationReadRepository.cs" />
+    <Compile Include="DomainLayer\InterfaceRepositories\IDataSourceFileReadRepository.cs" />
+    <Compile Include="DomainLayer\InterfaceRepositories\IDataSourceFileTypeReadRepository.cs" />
+    <Compile Include="DomainLayer\Rules\Engines\DataFileConfigurationRuleEngine.cs" />
+    <Compile Include="DomainLayer\Rules\Engines\DataSourceFileTypeRuleEngine.cs" />
+    <Compile Include="DomainLayer\Rules\Engines\FileProcessorRuleEngine.cs" />
+    <Compile Include="DomainLayer\Rules\Rules\DataFileConfigurationRules\DataFileConfigurationExistsRule.cs" />
+    <Compile Include="DomainLayer\Rules\Rules\DataSourceFileTypeRules\DataSourceFileTypeExistsRule.cs" />
+    <Compile Include="DomainLayer\Rules\Rules\FileProcessorRule.cs" />
+    <Compile Include="DomainLayer\Services\DataFileConfigurationService.cs" />
+    <Compile Include="DomainLayer\Services\DataSourceFileService.cs" />
+    <Compile Include="DomainLayer\Services\DataSourceFileTypeService.cs" />
+    <Compile Include="DomainLayer\Services\DomainErrorService.cs" />
+    <Compile Include="DomainLayer\Services\ParseService.cs" />
+    <Compile Include="FrameworkLayer\FileProcessorKernelBuilder.cs" />
+    <Compile Include="FrameworkLayer\Modules\BusinessRulesModule.cs" />
+    <Compile Include="FrameworkLayer\Modules\CommandModule.cs" />
+    <Compile Include="FrameworkLayer\Modules\ErrorHandlingModule.cs" />
+    <Compile Include="FrameworkLayer\Modules\FileRowParserModule.cs" />
+    <Compile Include="FrameworkLayer\Modules\ReadRepositoryModule.cs" />
+    <Compile Include="FrameworkLayer\Modules\WriteRepositoryModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\Development\SourceSafeCode\TRH Application\TRH Assembly\Framework\Framework.TRH\Framework.TRH.csproj">
+      <Project>{383EE7FF-8619-4F6D-A2C5-E2928B917C54}</Project>
+      <Name>Framework.TRH</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

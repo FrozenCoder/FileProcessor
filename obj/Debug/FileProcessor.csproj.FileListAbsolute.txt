@@ -1,0 +1,16 @@
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\FileProcessor.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\FileProcessor.pdb
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\FluentNHibernate.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\Framework.TRH.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\NHibernate.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\Ninject.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\Iesi.Collections.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\Antlr3.Runtime.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\Remotion.Data.Linq.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\Framework.TRH.pdb
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\FluentNHibernate.pdb
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\NHibernate.pdb
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\bin\Debug\Iesi.Collections.pdb
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\obj\Debug\FileProcessor.dll
+C:\Development\SourceSafeCode\TRH Application\TRH Assembly\Utils\FileProcessor\FileProcessor\obj\Debug\FileProcessor.pdb
